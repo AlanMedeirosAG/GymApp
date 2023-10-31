@@ -23,39 +23,29 @@ class TelaExercicio extends StatelessWidget {
                  backgroundColor:Colors.blueGrey,
                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)))),
 
-          floatingActionButton: FloatingActionButton(onPressed: (){("Foi clicado");},
-          child: const Icon(Icons.add),
-          ),
-          body: Container(
+         body: Container(
             margin: const EdgeInsets.all(8.0),
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
-              color: Colors.white,borderRadius: BorderRadius.circular(16)
+              color: Colors.blueGrey,borderRadius: BorderRadius.circular(16)
             ),
-            child: ListView(
-              children:[SizedBox(
-                height:250,
-                child:Row(
-                    mainAxisAlignment:MainAxisAlignment.spaceAround,
-                    children: [
-                      ElevatedButton(
-                        onPressed: (){},
-                        child:const Text("Enviar foto"),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children:[
+                Image.asset("assets/puxada alta.jpg",height: 128),
+                const Divider(color: Colors.white30),
+                const Text("Como fazer: ",
+                    style: TextStyle(fontWeight: FontWeight.bold,
+                    fontSize:18)),
+                      Text(exercicioModelo.comofazer),
+                    const SizedBox(height: 10),
+                    const Text("Quantidade: ",
+                        style: TextStyle(fontWeight: FontWeight.bold,
+                            fontSize:18)),
+                      const Text("4 series - 10 repetições"),
+              ]),
             ),
-                ElevatedButton(onPressed: (){},
-                 child: const Text("Tirar foto")
-                  ,)
-            ])),
-
-                const SizedBox(height: 8,),
-              const Divider(color:Colors.white),
-              const Text("Como fazer: ",
-                  style: TextStyle(fontWeight: FontWeight.bold,
-                  fontSize:18)),
-                Text(exercicioModelo.comofazer),
-              ]
-              ,),
-          )
-        );
-    }
-}
+          );
+         }
+       }
