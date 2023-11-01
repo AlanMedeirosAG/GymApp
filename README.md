@@ -6,7 +6,7 @@ O aplicativo cé composto por:
 
 - Tela de Login/Cadastro
   
-  ![Tela login](https://github.com/AlanMedeirosAG/GymApp/assets/118941629/91081c1e-d8e0-420c-b356-a5e476dcaa61)
+![Tela login](https://github.com/AlanMedeirosAG/GymApp/assets/118941629/91081c1e-d8e0-420c-b356-a5e476dcaa61)
 
 - Menu de treinos
 
