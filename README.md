@@ -2,7 +2,7 @@
 
 Projeto em Flutter de aplicativo de Diário de Academia
 
-O aplicativo cé composto por:
+O aplicativo é composto por:
 
 - Tela de Login/Cadastro
   
